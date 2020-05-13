@@ -1,0 +1,9 @@
+.u-go-up {
+    @include respond(xsdev){
+        order: -1 !important;
+    }
+
+    @include respond(smdev){
+        order: -1 !important;
+    }
+}

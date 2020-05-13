@@ -6,6 +6,14 @@
 
     &__wrapper {
 
+        @include respond(xsdev){
+            text-align: center;
+        }
+
+        @include respond(smdev){
+            text-align: center;
+        }
+
         &--heading {
             font-family: "Poppins";
             font-size: 4.5rem;
@@ -21,10 +29,18 @@
             font-size: 1.8rem;
             color: $color-tertiary;
             opacity: 0.9;
+
+            @include respond(smdev){
+                font-size: 2.5rem;
+            }
         }
     }
 
     &__image {
         width: 60rem;
+
+        @include respond(smdev){
+            margin-bottom: 15rem;
+        }
     }
 }

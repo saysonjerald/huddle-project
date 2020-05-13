@@ -8,6 +8,10 @@
     padding-top: 30rem;
     padding-bottom: 40rem;
 
+    @include respond(smdev){
+        padding-bottom: 50rem;
+    }
+
     &__wrapper {
         text-align: center;
 
@@ -17,6 +21,10 @@
             text-transform: capitalize;
             margin-bottom: 4rem;
             color: $color-tertiary;
+
+            @include respond(smdev){
+                margin-bottom: 8rem;
+            }
         }
     }
 }

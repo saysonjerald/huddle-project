@@ -2,9 +2,9 @@ $grid-breakpoints: (
   // Extra small screen / phone
   xs: 0,
   // Small screen / phone
-  sm: 576px,
+  sm: 375px,
   // Medium screen / tablet
-  md: 768px,
+  md: 412px,
   // Large screen / desktop
   lg: 992px,
   // Extra large screen / wide desktop
@@ -12,8 +12,8 @@ $grid-breakpoints: (
 );
 
 $container-max-widths: (
-  sm: 540px,
+  sm: 339px,
   md: 720px,
   lg: 960px,
-  xl: 1440px
+  xl: 1200px
 );

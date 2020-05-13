@@ -9,17 +9,32 @@
         fill: white;
         margin-bottom: 3.5rem;
         width: 24rem;
+
+        @include respond(smdev){
+            width: 34rem;
+        }
     }
 
     &__details,
     &__phone,
     &__email {
         font-size: 1.8rem;
+        opacity: 0.8;
+
+        @include respond(smdev){
+            font-size: 2.5rem;
+        }
     }
 
     &__details {
         max-width: 39rem;
         margin-bottom: 3.5rem;
+
+        @include respond(smdev){
+            max-width: 55rem;
+            margin-bottom: 7.5rem;
+            line-height: 4.5rem;
+        }
     }
 
     &__phone {
@@ -47,27 +62,65 @@
     &__newsletter {
         padding-left: 3.5rem;
 
+        @include respond(smdev){
+            padding-left: 0rem;
+            margin-bottom: 15rem;
+        }
+
+        &--wrapper {
+            max-width: 54rem;
+
+            @include respond(smdev){
+                max-width: 60rem;
+                text-align: right;
+            }
+        }    
+
         &--heading {
             text-transform: uppercase;
             font-size: 2.8rem;
             margin-bottom: 2.5rem;
+
+            @include respond(smdev){
+                font-size: 3.8rem;
+            }
         }
 
         &--sub {
             font-size: 1.8rem;
             max-width: 40rem;
             margin-bottom: 4.5rem;
+            opacity: 0.8;
+
+            @include respond(smdev){
+                font-size: 2.5rem;
+                max-width: 53rem;
+                line-height: 4.5rem;
+            }
         }
 
         &--emailForm {
-            width: 37rem;
+            // max-width: 37rem;
             height: 4rem;
             border-radius: 0.5rem;
-            font-size: 1.8rem;
+            font-size: 2.8rem;
             padding-left: 1.5rem;
             border: none;
             margin-right: 2rem;
             margin-bottom: 1.6rem;
+
+            @include respond(smdev){
+                display: block;
+                height: 7rem;
+                width: 100%;
+            }
+        }
+
+        &--button {
+            @include respond(smdev){
+                padding: 1.9rem 6rem;
+                justify-content: end;
+            }
         }
     }
 }
