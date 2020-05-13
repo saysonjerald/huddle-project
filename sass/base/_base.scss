@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: $font-size-base;
+}
+
+body {
+    font-family: "OpenSans";
+    color: $color-tertiary;
+    box-sizing: border-box;
+}

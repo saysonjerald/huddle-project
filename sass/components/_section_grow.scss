@@ -1,0 +1,30 @@
+.sectionGrow {
+    background-color: #F6FBFF; 
+    margin-top: -0.2rem;
+    padding-top: 7.5rem;
+    padding-bottom: 5rem;
+
+    &__wrapper {
+
+        &--heading {
+            font-family: "Poppins";
+            font-size: 4.5rem;
+            text-transform: capitalize;
+            margin-bottom: 3.5rem;
+            color: $color-tertiary;
+        }
+
+        &--sub {
+            display: inline-block;
+            max-width: 60rem;
+            font-family: "OpenSans Semi Bold";
+            font-size: 1.8rem;
+            color: $color-tertiary;
+            opacity: 0.9;
+        }
+    }
+
+    &__image {
+        width: 60rem;
+    }
+}

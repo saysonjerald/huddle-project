@@ -1,0 +1,37 @@
+.sectionDoes {
+
+   background-image: url(../img/bg-section-top-desktop-1.svg);
+   background-position: bottom;
+   background-size: 100% auto;
+   background-repeat: no-repeat;
+   padding-bottom: 30rem;
+
+    &__image {
+        width: 114rem;
+        margin-bottom: 8rem;
+    }
+
+    &__wrapper {
+        display: inline-block;
+
+        &--image {
+            width: 4.7rem;
+            text-align: left;
+            display: block;
+        }
+
+        &--count {
+            font-size: 10rem;
+            font-family: "OpenSans Bold";
+            color: $color-tertiary;
+            margin-bottom: 1.5rem;
+        }
+
+        &--label {
+            font-size: 2.7rem;
+            color: $color-tertiary;
+            text-transform: capitalize;
+            opacity: 0.5;
+        }
+    }
+}

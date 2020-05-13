@@ -1,0 +1,22 @@
+.sectionReadyBuild {
+    background-image: url(../img/bg-section-bottom-desktop-2.svg), url(../img/bg-footer-top-desktop.svg);
+    background-position: top, bottom;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin-top: -0.2rem;
+    
+    padding-top: 30rem;
+    padding-bottom: 40rem;
+
+    &__wrapper {
+        text-align: center;
+
+        &--heading {
+            font-family: "Poppins";
+            font-size: 5rem;
+            text-transform: capitalize;
+            margin-bottom: 4rem;
+            color: $color-tertiary;
+        }
+    }
+}

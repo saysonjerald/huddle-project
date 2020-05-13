@@ -1,0 +1,27 @@
+.header {
+    padding-top: 4rem;
+    // min-height: 90vh;
+    height: 76.8rem;
+
+    &__textbox {
+        margin-top: 22rem;
+
+        &--heading {
+            font-family: "Poppins";
+            text-transform: capitalize;
+            font-size: 5.3rem;
+            margin-bottom: 3.5rem;
+            color: $color-tertiary;
+        }
+
+        &--sub { 
+            display: inline-block;
+            max-width: 70rem;
+            font-family: "OpenSans Semi Bold";
+            font-size: 2.2rem;
+            margin-bottom: 4.5rem;
+            color: $color-tertiary;
+            opacity: 0.8;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-secondary;
+    text-transform: capitalize;
+
+    &:hover, &:active {
+        text-decoration: none;
+        color: #fff;
+        box-shadow: 0 .2rem .4rem rgba(17, 17, 17, 0.40);
+    }
+
+    &__full {
+
+        &--big {
+            font-family: "OpenSans Semi Bold";
+            border-radius: 50rem;
+            padding: 3rem 12rem;
+            background-color: $color-primary;
+            font-size: 2.3rem;
+            box-shadow: 0 .2rem .4rem rgba(17, 17, 17, 0.140);
+        }
+
+        &--small {
+            font-family: "OpenSans Semi Bold";
+            border-radius: 0.5rem;
+            padding: 0.9rem 3rem;
+            background-color: $color-primary;
+            font-size: 1.8rem;
+            color: #fff;
+            border: none;
+            box-shadow: 0 .2rem .4rem rgba(17, 17, 17, 0.140);
+        }
+    }
+
+    &__ghost {
+        font-family: "OpenSans";
+        border-radius: 30rem;
+        padding: 0.8rem 4rem;
+        border: 0.1rem solid $color-primary;
+        font-size: 1.9rem;
+        color: $color-primary;
+        box-shadow: 0 .2rem .4rem rgba(17, 17, 17, 0.140);
+    }
+}
