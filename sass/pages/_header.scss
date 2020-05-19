@@ -1,12 +1,15 @@
 .header {
     padding-top: 4rem;
     // min-height: 90vh;
-    height: 76.8rem;
+    height: 80.8rem;
 
-
-    @include respond(smdev){
+    @include respond-below(xxl){
         height: 102.8rem;
     }
+
+    // @include respond-between(xxs, xs){
+    //     height: 102.8rem;
+    // }
 
     &__textbox {
         margin-top: 22rem;
@@ -15,7 +18,7 @@
             font-family: "Poppins";
             text-transform: capitalize;
             font-size: 5.3rem;
-            margin-bottom: 6rem;
+            margin-bottom: 4rem;
             color: $color-tertiary;
         }
 
@@ -24,11 +27,11 @@
             max-width: 70rem;
             font-family: "OpenSans Semi Bold";
             font-size: 2.2rem;
-            margin-bottom: 4.5rem;
+            margin-bottom: 5.5rem;
             color: $color-tertiary;
-            opacity: 0.8;
+            opacity: 0.9;
 
-            @include respond(smdev){
+            @include respond-below(xs){
                 font-size: 2.7rem;
                 margin-bottom: 8.5rem;
             }

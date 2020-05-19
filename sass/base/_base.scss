@@ -7,12 +7,20 @@
 html {
     font-size: $font-size-base;
 
-    @include respond(xsdev){
-        font-size: 0.4rem;
+    // @include respond-below(xxs){
+    //     font-size: 0.30rem;
+    // }
+
+    @include respond-below(xxl){
+        font-size: 0.7rem;
     }
 
-    @include respond(smdev){
-        font-size: 0.325rem;
+    @include respond-below(md){
+        font-size: 0.55rem;
+    }
+
+    @include respond-below(xs){
+        font-size: 0.35rem;
     }
 
 }

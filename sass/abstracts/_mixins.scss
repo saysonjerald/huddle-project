@@ -1,28 +1,28 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 
-@mixin respond($breakpoint){
+// @mixin respond($breakpoint){
 
-    @if $breakpoint == xsdev {
-        @media (min-width: 0) and (max-width: 374px) { @content }; 
-    } 
+//     @if $breakpoint == xsdev {
+//         @media (min-width: 0) and (max-width: 374px) { @content }; 
+//     } 
 
-    @if $breakpoint == smdev {
-        @media (min-width: 375px) and (max-width: 611px) { @content }; 
-    }
+//     @if $breakpoint == smdev {
+//         @media (min-width: 375px) and (max-width: 611px) { @content }; 
+//     }
 
-    @if $breakpoint == mddev {
-        @media (min-width: 612px) and (max-width: 991px) { @content }; 
-    }
+//     @if $breakpoint == mddev {
+//         @media (min-width: 612px) and (max-width: 991px) { @content }; 
+//     }
 
-    @if $breakpoint == lgdev {
-        @media (min-width: 992px) { @content }; 
-    }
+//     @if $breakpoint == lgdev {
+//         @media (min-width: 992px) { @content }; 
+//     }
 
-    @if $breakpoint == lxdev {
-        @media (min-width: 1300px) { @content }; 
-    }
-}
+//     @if $breakpoint == lxdev {
+//         @media (min-width: 1300px) { @content }; 
+//     }
+// }
 
 //
 //  RESPOND ABOVE

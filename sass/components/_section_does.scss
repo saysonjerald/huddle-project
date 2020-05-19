@@ -6,15 +6,19 @@
    background-repeat: no-repeat;
    padding-bottom: 30rem;
 
-   @include respond(smdev){
+   @include respond-below(md){
+    background-image: url(../img/bg-section-top-mobile-1.svg);
+    }
+
+   @include respond-below(xs){
     padding-bottom: 10rem;
     }
 
     &__image {
         width: 114rem;
-        margin-bottom: 8rem;
+        margin-bottom: 12rem;
 
-        @include respond(smdev){
+        @include respond-below(xs){
             margin-bottom: 20rem;
         }
     }
@@ -22,8 +26,12 @@
     &__wrapper {
         display: inline-block;
 
-        @include respond(smdev){
-            margin-bottom: 15rem;
+        // @include respond-between(xxs, xs){
+        //     margin-bottom: 15rem;
+        // }
+
+        @include respond-below(md){
+            margin-bottom: 22rem;
         }
 
         &--image {
@@ -31,7 +39,12 @@
             text-align: left;
             display: block;
 
-            @include respond(smdev){
+            
+            @include respond-below(md){
+                margin-left: 1.5rem;
+            }
+
+            @include respond-below(xs){
                 width: 5.3rem;
             }
         }
@@ -42,9 +55,15 @@
             color: $color-tertiary;
             margin-bottom: 1.5rem;
 
-            @include respond(smdev){
+            
+            @include respond-below(md){
+                font-size: 13rem;
+            }
+
+            @include respond-below(xs){
                 font-size: 12rem;
             }
+
         }
 
         &--label {
@@ -53,7 +72,12 @@
             text-transform: capitalize;
             opacity: 0.5;
 
-            @include respond(smdev){
+            
+            @include respond-below(md){
+                font-size: 3.7rem;
+            }
+
+            @include respond-below(xs){
                 font-size: 3.2rem;
             }
         }

@@ -8,7 +8,8 @@
     padding-top: 30rem;
     padding-bottom: 40rem;
 
-    @include respond(smdev){
+    @include respond-below(md){
+        background-image: url(../img/bg-section-bottom-mobile-2.svg), url(../img/bg-footer-top-mobile.svg);
         padding-bottom: 50rem;
     }
 
@@ -22,7 +23,7 @@
             margin-bottom: 4rem;
             color: $color-tertiary;
 
-            @include respond(smdev){
+            @include respond-below(md){
                 margin-bottom: 8rem;
             }
         }

@@ -6,11 +6,7 @@
 
     &__wrapper {
 
-        @include respond(xsdev){
-            text-align: center;
-        }
-
-        @include respond(smdev){
+        @include respond-below(md){
             text-align: center;
         }
 
@@ -30,7 +26,7 @@
             color: $color-tertiary;
             opacity: 0.9;
 
-            @include respond(smdev){
+            @include respond-below(md){
                 font-size: 2.5rem;
             }
         }
@@ -39,7 +35,7 @@
     &__image {
         width: 60rem;
 
-        @include respond(smdev){
+        @include respond-below(md){
             margin-bottom: 15rem;
         }
     }

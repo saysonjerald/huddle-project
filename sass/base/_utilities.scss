@@ -1,9 +1,5 @@
 .u-go-up {
-    @include respond(xsdev){
-        order: -1 !important;
-    }
-
-    @include respond(smdev){
+    @include respond-below(md){
         order: -1 !important;
     }
 }

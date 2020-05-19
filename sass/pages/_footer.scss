@@ -10,7 +10,7 @@
         margin-bottom: 3.5rem;
         width: 24rem;
 
-        @include respond(smdev){
+        @include respond-below(md){
             width: 34rem;
         }
     }
@@ -21,7 +21,7 @@
         font-size: 1.8rem;
         opacity: 0.8;
 
-        @include respond(smdev){
+        @include respond-below(md){
             font-size: 2.5rem;
         }
     }
@@ -30,7 +30,7 @@
         max-width: 39rem;
         margin-bottom: 3.5rem;
 
-        @include respond(smdev){
+        @include respond-below(md){
             max-width: 55rem;
             margin-bottom: 7.5rem;
             line-height: 4.5rem;
@@ -62,7 +62,7 @@
     &__newsletter {
         padding-left: 3.5rem;
 
-        @include respond(smdev){
+        @include respond-below(md){
             padding-left: 0rem;
             margin-bottom: 15rem;
         }
@@ -70,7 +70,7 @@
         &--wrapper {
             max-width: 54rem;
 
-            @include respond(smdev){
+            @include respond-below(xxl){
                 max-width: 60rem;
                 text-align: right;
             }
@@ -81,7 +81,7 @@
             font-size: 2.8rem;
             margin-bottom: 2.5rem;
 
-            @include respond(smdev){
+            @include respond-below(md){
                 font-size: 3.8rem;
             }
         }
@@ -92,7 +92,7 @@
             margin-bottom: 4.5rem;
             opacity: 0.8;
 
-            @include respond(smdev){
+            @include respond-below(md){
                 font-size: 2.5rem;
                 max-width: 53rem;
                 line-height: 4.5rem;
@@ -101,24 +101,29 @@
 
         &--emailForm {
             // max-width: 37rem;
-            height: 4rem;
             border-radius: 0.5rem;
-            font-size: 2.8rem;
-            padding-left: 1.5rem;
+            font-size: 1.8rem;
+            display: inline-block;
+            width: 36rem;
+            height: 4.5rem;
+            padding-bottom: 0.45rem;
+            padding-left: 1rem;
             border: none;
-            margin-right: 2rem;
+            margin-right: 3rem;
             margin-bottom: 1.6rem;
 
-            @include respond(smdev){
+            @include respond-below(xxl){
                 display: block;
-                height: 7rem;
                 width: 100%;
+            }
+
+            @include respond-below(md){
+                height: 7.5rem;
             }
         }
 
         &--button {
-            @include respond(smdev){
-                padding: 1.9rem 6rem;
+            @include respond-below(xxl){
                 justify-content: end;
             }
         }

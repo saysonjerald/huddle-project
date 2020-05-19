@@ -18,7 +18,11 @@
             padding: 3rem 12rem;
             background-color: $color-primary;
             font-size: 2.3rem;
-            box-shadow: 0 .2rem .4rem rgba(17, 17, 17, 0.140);
+            box-shadow: 0 0.1rem 1.8rem rgba(17, 17, 17, 0.24);
+
+            @include respond-below(xs){
+                padding: 2.5rem 9rem;
+            }
         }
 
         &--small {
@@ -30,6 +34,10 @@
             color: #fff;
             border: none;
             box-shadow: 0 .2rem .4rem rgba(17, 17, 17, 0.140);
+
+            @include respond-below(xs){
+                padding: 2rem 10rem;
+            }
         }
     }
 
