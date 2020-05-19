@@ -1,19 +1,12 @@
-$grid-breakpoints: (
-  // Extra small screen / phone
-  xs: 0,
-  // Small screen / phone
-  sm: 375px,
-  // Medium screen / tablet
-  md: 811px,
-  // Large screen / desktop
-  lg: 992px,
-  // Extra large screen / wide desktop
-  xl: 1140px
-);
+/* example taken from https://stackoverflow.com/a/48976550/3466464 */
+/* import what we need to override */
+// @import "bootstrap/functions";
+// @import "bootstrap/variables";
 
-$container-max-widths: (
-  sm: 339px,
-  md: 720px,
-  lg: 960px,
-  xl: 1400px
-);
+/* set the overriding variables */
+// $grid-breakpoints: (xxxs: 0,xxs: 374px,xs: 568px,sm: 667px,md: 768px,lg: 992px,xl: 1200px,xxl: 1440px,xxxl: 1600px);
+
+// $container-max-widths: (xxxs: 0,xxs: 280px,xs: 575px,sm: 668px,md: 767px,lg: 868px,xl: 1092px,xxl: 1300px,xxxl: 1540px);
+
+/* override the !default vars with the values we set above */
+// @import "bootstrap";

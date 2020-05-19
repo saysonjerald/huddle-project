@@ -8,3 +8,6 @@ $font-size-base:  0.625rem;
 //GRID
 $grid-columns:      12;
 $grid-gutter-width: 30px;
+
+$grid-breakpoints: (xxxs: 0,xxs: 374px,xs: 568px,sm: 667px,md: 768px,lg: 992px,xl: 1200px,xxl: 1440px,xxxl: 1600px);
+$container-max-widths: (xxxs: 0,xxs: 280px,xs: 575px,sm: 668px,md: 767px,lg: 868px,xl: 1092px,xxl: 1300px,xxxl: 1540px);
